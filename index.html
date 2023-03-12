@@ -9,19 +9,20 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <h1>Reference Website</h1>
-        <nav>
+        <nav role="navigation">
             <ul>
-                <li><a href="#naming-conventions">Naming Conventions</a></li>
-                <li><a href="#commit-messages">Commit messages</a></li>
-                <li><a href="#html-tags-and-elements">HTML Tags & Elements</a></li>
-                <li><a href="#structuring-content">Structuring Content</a></li>
+                <li><a href="#naming-conventions" aria-label="Naming Conventions">Naming Conventions</a></li>
+                <li><a href="#commit-messages" aria-label="Commit Messages">Commit messages</a></li>
+                <li><a href="#html-tags-and-elements" aria-label="HTML Tags and Elements">HTML Tags & Elements</a></li>
+                <li><a href="#structuring-content" aria-label="Structuring Content">Structuring Content</a></li>
+                <li><a href="#accessibility" aria-label="Accessibility and Landmark Role">Accessibility and Landmark Roles</a></li>
             </ul>
         </nav>
     </header>  
       
-<main>
+<main role="main">
     <section id="naming-conventions">
     <h2>Naming Conventions</h2>
         <ul>
@@ -44,20 +45,40 @@
     <section id="html-tags-and-elements">
     <h2>HTML Tags & Elements</h2>
         <ul>
-            <li>Headings(h1-h6):</li>
-            <li>Paragraphs(p)</li>
-            <li>lists: ul, ol, dl</li>
+            <li>Headings (h1-h6):
+                <h1>Heading</h1>
+                <h2>Heading</h2>
+                <h3>Heading</h3>
+                <h4>Heading</h4>
+                <h5>Heading</h5>
+                <h6>Heading</h6>
+            </li>
+            <li>Paragraphs (p):
+                <p>Paragraph</p>
+            </li>
+            <li>lists: unordered list, ordered list, description list:
+                <ul>
+                    <li>ul</li>
+                </ul>
+                <ol>
+                    <li>or</li>
+                </ol>
+                <dl>
+                    <dt>dl</dt>
+                    <dd>dl</dd>
+                </dl>
+            </li>
             <li>a</li>
             <li>img</li>
             <li>figure (img & figcaption)</li>
-            <li>q</li>
-            <li>blockquote</li>
-            <li>cite</li>
-            <li>em</li>
-            <li>strong</li>
-            <li>b</li>
+            <li><q>quote</q></li>   
+            <li><blockquote>blockquote</blockquote></li>   
+            <li><cite>cite</cite></li>    
+            <li><em>emphasis</em></li>
+            <li><strong>strong</strong></li>
+            <li><b>keyword</b></li>
             <li>i</li>
-            <li>small</li>
+            <li><small>small</small></li>
         </ul>
     </section>
 
@@ -65,14 +86,30 @@
         <h2>Structuring Content</h2>
             <ul>
                 <li>Header</li>
-                <li>Footer(p)</li>
+                <li>Footer</li>
                 <li>Main</li>
                 <li>Section</li>
                 <li>Acrticle</li>
                 <li>Nav</li>
             </ul>
         </section>
-    
+        
+        <section id="accessibility">
+            <h2>Accessibility and Landmark Roles</h2>
+                <ul>
+                    <li>Header role: "banner"</li>
+                    <li>Footer role: "contentinfo"</li>
+                    <li>Main role: "main"</li>
+                    <li>Aside role: "complimentary"</li>
+                    <li>Nav role: "navigation"</li>
+                    <li>Skip links: 
+                        <a href="#">skip link</a>
+                </ul>
+
+                <a href="relative-url-paths.html" aria-label="Relative Url/Paths"> Relative Url/Paths</a>
 </main>
+<footer role="contentinfo">
+    <p><small>&copy; Web Design 2023</small></p>
+</footer>
 </body>
 </html>
