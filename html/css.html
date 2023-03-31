@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design 1 Reference Site</title>
-    <link rel="stylesheet" href="../css/stylehtml.css"
+    <link rel="stylesheet" href="../css/stylecss.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Serif&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,22 +16,22 @@
         <h1>Reference Website</h1>
         <nav role="navigation">
             <ul>
-                <li><a href="css.html" aria-label="CSS"> CSS</a></li>
                 <li><a href="index.html" aria-label="HTML"> HTML</a></li>
+                <li><a href="css.html" aria-label="CSS"> CSS</a></li>
             </ul>
         </nav>
     </header>  
       
 <main role="main">
-    <h2>Looking Back at HTML</h2>
-    <img class="logo" src="../images/html-logo.png" alt="HTML Logo">
+    <h2>Looking Back at CSS</h2>
+    <img class="logo" src="../images/css-logo.png" alt="CSS Logo">
 
-    <section id="naming-conventions">
-    <h3>Naming Conventions</h3>
+    <section id="linking-css-to-html">
+    <h3>Linking CSS to HTML</h3>
         <ul>
-            <li>All lowercase</li>
-            <li>No spaces</li>
-            <li>Only letters, numbers and dashes</li>
+            <li>href: Used to point to the location of the CSS file (the path). </li>
+            <li>rel: This attribute is used to define this item as a stylesheet.</li>
+            <li>Example: <strong>rel="stylesheet" href="../css/style.css</strong> </li>
         </ul>
     </section>
 
@@ -46,50 +45,21 @@
         </ul>
     </section>
 
-    <section id="html-tags-and-elements">
-    <h3>HTML Tags & Elements</h3>
+    <section id="syntax-of-css">
+    <h3>Syntax of CSS</h3>
         <ul>
-            <li>Headings (h1-h6):
-                <h1></h1>
-                <h2></h2>
-                <h3></h3>
-                <h4></h4>
-                <h5></h5>
-                <h6></h6>
-            </li>
-            <li>Paragraphs (p):
-                <p></p>
-            </li>
-            <li>Lists: unordered list, ordered list, description list:
-                <ul>
-                    <li>ul</li>
-                </ul>
-                <ol>
-                    <li>or</li>
-                </ol>
-                <dl>
-                    <dt>dl</dt>
-                    <dd>dl</dd>
-                </dl>
-            </li>
-            <li>a</li>
-            <li>img</li>
-            <li>figure (img & figcaption)</li>
-            <li><q>quote</q></li>   
-            <li><blockquote>blockquote</blockquote></li>   
-            <li><cite>cite</cite></li>    
-            <li><em>emphasis</em></li>
-            <li><strong>strong</strong></li>
-            <li><b>keyword</b></li>
-            <li>i</li>
-            <li><small>small</small></li>
+            <li>Rule set: Composed of a selector and one or many declarations surrounded by curly braces {}. </li>
+            <li>Selector (ex.h1):Identifies the HTML element being targeted for styling.</li>
+            <li>Declarations: Assigns a value to a property; declarations must end with a semi-colon</li>
+            <li>Property: The type of design you want to add. Ex. width, color, border, etc.</li>
+            <li>Value: Accepted value for property. Ex. 30px, blue, etc.</li>
         </ul>
     </section>
 
-    <section id="structuring-content">
-        <h3>Structuring Content</h3>
+    <section id="targeting-html">
+        <h3>Targeting HTML</h3>
             <ul>
-                <li>Header</li>
+                <li>Tag</li>
                 <li>Footer</li>
                 <li>Main</li>
                 <li>Section</li>

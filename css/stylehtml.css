@@ -1,11 +1,106 @@
-body {
-    background-color: #faf5ef;
+html{
+    box-sizing: border-box;
 }
 
-h1, h2 {
+*,*::before, *::after {
+    box-sizing:inherit;
+}
+
+body{
+    width:100%;
+    padding:3em 0px 3em 0px;
+    background-image: url("../images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Delicious Handrawn', cursive;
+    font-weight:400;
+    font-size:5em;
+    color:#ff7c9c;
+    text-align:center;
+}
+
+h2 {
+    margin-top: 50px;
     font-family: 'Quicksand', sans-serif;
     font-weight:700;
-    color:#ff7c9c;
+    font-size:2.2em;
+    text-transform: uppercase;
+    color:#b57cb1;
+    text-align:center;
 }
 
+.logo {
+    width: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight:600;
+    color:#b57cb1;
+}
+nav li a{
+    padding: .5em .75em .5em .75em;
+    border-radius:8px;
 
+}
+
+nav li{
+    display:inline;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
+}
+
+nav ul{
+    list-style-type:none;
+    display:block;
+    padding-left:0;
+    text-align:center;
+}
+
+nav a:link,
+nav a:visited{
+    background-color:#aad7d2;
+    color:white;
+    border:2px solid #aad7d2;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    background-color:white;
+    color:#aad7d2;
+    border:2px solid #aad7d2;
+}
+
+section a{
+    padding: .1em .25em .1em .25em;
+    border-radius:8px;
+    display:inline;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
+    font-style: normal;
+}
+
+section a:link,
+section a:visited{
+    background-color:#fdc2a2;
+    color:white;
+    border:2px solid #fdc2a2;
+    text-decoration: none;
+}
+
+section a:hover,
+section a:focus{
+    background-color:white;
+    color:#fdc2a2;
+    border:2px solid #fdc2a2;
+}
+
+ul {
+    font-family: 'PT Serif', serif;
+}
