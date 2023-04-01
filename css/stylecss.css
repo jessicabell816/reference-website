@@ -11,6 +11,7 @@ body{
     padding:3em 0px 3em 0px;
     background-image: url("../images/background-image.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -84,30 +85,6 @@ nav a:focus{
     background-color:white;
     color:#aad7d2;
     border:2px solid #aad7d2;
-}
-
-section a{
-    padding: .1em .25em .1em .25em;
-    border-radius:8px;
-    display:inline;
-    font-family: 'Quicksand', sans-serif;
-    font-weight:500;
-    font-style: normal;
-}
-
-section a:link,
-section a:visited{
-    background-color:#fdc2a2;
-    color:white;
-    border:2px solid #fdc2a2;
-    text-decoration: none;
-}
-
-section a:hover,
-section a:focus{
-    background-color:white;
-    color:#fdc2a2;
-    border:2px solid #fdc2a2;
 }
 
 ul {
