@@ -48,24 +48,45 @@
     <section id="syntax-of-css">
     <h3>Syntax of CSS</h3>
         <ul>
-            <li>Rule set: Composed of a selector and one or many declarations surrounded by curly braces {}. </li>
-            <li>Selector (ex.h1):Identifies the HTML element being targeted for styling.</li>
-            <li>Declarations: Assigns a value to a property; declarations must end with a semi-colon</li>
-            <li>Property: The type of design you want to add. Ex. width, color, border, etc.</li>
-            <li>Value: Accepted value for property. Ex. 30px, blue, etc.</li>
+            <li><strong>Rule set:</strong> Composed of a selector and one or many declarations surrounded by curly braces {}. </li>
+            <li><strong>Selector (ex.h1):</strong>Identifies the HTML element being targeted for styling.</li>
+            <li><strong>Declarations:</strong> Assigns a value to a property; declarations must end with a semi-colon</li>
+            <li><strong>Property:</strong> The type of design you want to add. Ex. width, color, border, etc.</li>
+            <li><strong>Value:</strong> Accepted value for property. Ex. 30px, blue, etc.</li>
         </ul>
     </section>
 
     <section id="targeting-html">
         <h3>Targeting HTML</h3>
+
+        <article>
+        <h4>Selectors</h4>
             <ul>
-                <li>Tag</li>
-                <li>Footer</li>
-                <li>Main</li>
-                <li>Section</li>
-                <li>Acrticle</li>
-                <li>Nav</li>
+                <li><strong>Tag:</strong> Select all the tags of the same type (ex. <strong>html {}</strong>) </li>
+                <li><strong>Class (.):</strong> Select an element that has a class (ex. <strong>.nav {}</strong>)</li>
+                <li><strong>ID (#):</strong> Select an element that has the ID (ex. <strong>#heading {}</strong>)</li> 
+                <li><strong>Descendant (space):</strong> (ex. <strong></strong>)</li>
+                <li><strong>Child (>):</strong> (ex. <strong></strong>)</li>
+                <li><strong>Adjacent Sibling (+):</strong> (ex. <strong></strong>)</li>
+                <li><strong>General Sibling (+):</strong> (ex. <strong></strong>)</li>
+                <li><strong>Atrribute ([]):</strong> (ex. <strong></strong>)</li>
             </ul>
+        </article>
+
+        <article>
+            <h4>Pseudo Classes</h4>
+                <ul>
+                    <li><strong>First Child (:first-child):</strong>  (ex. <strong></strong>) </li>
+                    <li><strong>Last Child (:last-child):</strong>  (ex. <strong></strong>)</li>
+                    <li><strong>Only Child (:last-child):</strong> (ex. <strong></strong>) </li>
+                    <li><strong>Nth Child (:nth-child):</strong> (ex. <strong></strong>) </li>
+                    <li><strong>Nth Last Child (:nth-last-child):</strong> (ex. <strong></strong>) </li>
+                    <li><strong>Nth of Type(:nth-of-type):</strong>(ex. <strong></strong>) </li>
+                    <li><strong>Nth Last of Type (:nth-last-of-type):</strong> (ex. <strong></strong>) </li>
+                    <li><strong>First of Type (:first-of-type):</strong>(ex. <strong></strong>) </li>
+                    <li><strong>Last of Type(:last-of-type):</strong> (ex. <strong></strong>) </li>
+                </ul>
+            </article>
         </section>
         
         <section id="accessibility">
