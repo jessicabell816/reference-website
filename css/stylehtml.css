@@ -114,3 +114,8 @@ section a:focus{
 ul {
     font-family: 'PT Serif', serif;
 }
+
+strong {
+    font-family: 'PT Serif', serif;
+    color:#ff7c9c;
+}

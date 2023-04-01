@@ -45,6 +45,13 @@ h3 {
     font-weight:600;
     color:#b3b7dc;
 }
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight:500;
+    color:#868cbe;
+}
+
 nav li a{
     padding: .5em .75em .5em .75em;
     border-radius:8px;
@@ -105,4 +112,13 @@ section a:focus{
 
 ul {
     font-family: 'PT Serif', serif;
+}
+
+.li-remove{
+    list-style-type:none;
+}  
+
+strong {
+    font-family: 'PT Serif', serif;
+    color:#ff7c9c;
 }

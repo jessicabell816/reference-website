@@ -7,8 +7,8 @@
     <title>Web Design 1 Reference Site</title>
     <link rel="stylesheet" href="../css/stylecss.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Serif&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Serif&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,31 +29,75 @@
     <section id="linking-css-to-html">
     <h3>Linking CSS to HTML</h3>
         <ul>
-            <li>href: Used to point to the location of the CSS file (the path). </li>
-            <li>rel: This attribute is used to define this item as a stylesheet.</li>
-            <li>Example: <strong>rel="stylesheet" href="../css/style.css</strong> </li>
+            <li><strong>href:</strong> Used to point to the location of the CSS file (the path). </li>
+            <li><strong>rel:</strong> This attribute is used to define this item as a stylesheet.</li>
+            <li class="li-remove">Example: <strong>rel="stylesheet" href="../css/style.css</strong> </li>
         </ul>
     </section>
 
-    <section id="commit-messages">
-    <h3>Commit Messages</h3>
-        <ul>
-            <li>Minimum 3 words & 10 Characters</li>
-            <li>Proper grammer and spelling</li>
-            <li>Starts with capital, ends with no period</li>
-            <li>Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
-        </ul>
+    <section id="border-box">
+        <h3>Border Box</h3>
+            <ul>
+                <li>Resets the layout math.</li>
+                <li>Put at the top of EVERY CSS file!</li>
+                <li class="li-remove">
+                <strong>html{
+                box-sizing: border-box;
+                } 
+                *,*::before, *::after {
+                    box-sizing:inherit;
+                }</strong></li>
+            </ul>
     </section>
 
     <section id="syntax-of-css">
     <h3>Syntax of CSS</h3>
         <ul>
             <li><strong>Rule set:</strong> Composed of a selector and one or many declarations surrounded by curly braces {}. </li>
-            <li><strong>Selector (ex.h1):</strong>Identifies the HTML element being targeted for styling.</li>
+            <li><strong>Selector (ex.h1):</strong> Identifies the HTML element being targeted for styling.</li>
             <li><strong>Declarations:</strong> Assigns a value to a property; declarations must end with a semi-colon</li>
-            <li><strong>Property:</strong> The type of design you want to add. Ex. width, color, border, etc.</li>
-            <li><strong>Value:</strong> Accepted value for property. Ex. 30px, blue, etc.</li>
+            <li><strong>Property:</strong> The type of design you want to add (ex. width, color, border, etc.).</li>
+            <li><strong>Value:</strong> Accepted value for property (ex. 30px, blue, etc.).</li>
         </ul>
+    </section>
+
+    <section id="properties-decorations-states"></section>
+    <h3>Properties, Decorations & States</h3>
+    
+        <article>
+            <h4>Font Properties</h4>
+                <ul>
+                    <li><strong>font-family:</strong> Used to style the typeface used in the website. </li>
+                    <li><strong>font-size:</strong> For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px).</li>
+                    <li><strong>font-weight:</strong> Sets how thick or thin characters in text should be displayed (ex: bold, normal, 700 (bold))</li>
+                    <li><strong>font-style:</strong> Specifies font style for text (ex: italic or normal).</li>
+                    <li><strong>line-height:</strong> For adjusting the line-height: a single number, a multiplier that multiplies the font-size (ex: 1.5)</li>
+                </ul>
+        </article>
+
+        <article>
+            <h4>Text Decorations</h4>
+                <ul>
+                    <li><strong>text-transform:</strong> Change capitalization such as uppercase, lowercase, capitalize. </li>
+                    <li><strong>text-decoration:</strong>Specifies the decoration added to text (ex: none, underline, line-through, overline).</li>
+                    <li><strong>text-align:</strong> Specifies the horizontal alignment of text in an element (ex: left, center, right, justify).</li>
+                    <li><strong>text-indent:</strong> Indent the first line of text like traditionally printed materials (ex: 1rem, 2em, 20px, 25%).</li>
+                    <li><strong>text-shadow:</strong> Adding a shadow to the text. Specified as: horizontal-offset vertical-offset blur-radius colour (ex.text-shadow: 2px 2px #ff0000;).</li>
+                    <li><strong>list-style-type:</strong> Removes default decorations from ordered and unordered lists.</li>
+                </ul>
+        </article>
+
+        <article>
+            <h4>Link States</h4>
+                <ul>
+                    <li><strong>Default:</strong> (a:link) </li>
+                    <li><strong>Visited:</strong> For styling the link after it’s been visited by the user (a:visited).</li>
+                    <li><strong>Hover:</strong> For styling the link when the mouse is sitting over it (a:hover).</li>
+                    <li><strong>Focus:</strong> For styling the link when the keyboard has tab-focused it (a:focus).</li>
+                    <li><strong>Active:</strong> For styling the link when the mouse button is pressed down on it (a:active).</li>
+                </ul>
+        </article>
+
     </section>
 
     <section id="targeting-html">
@@ -62,45 +106,101 @@
         <article>
         <h4>Selectors</h4>
             <ul>
-                <li><strong>Tag:</strong> Select all the tags of the same type (ex. <strong>html {}</strong>) </li>
-                <li><strong>Class (.):</strong> Select an element that has a class (ex. <strong>.nav {}</strong>)</li>
-                <li><strong>ID (#):</strong> Select an element that has the ID (ex. <strong>#heading {}</strong>)</li> 
-                <li><strong>Descendant (space):</strong> (ex. <strong></strong>)</li>
-                <li><strong>Child (>):</strong> (ex. <strong></strong>)</li>
-                <li><strong>Adjacent Sibling (+):</strong> (ex. <strong></strong>)</li>
-                <li><strong>General Sibling (+):</strong> (ex. <strong></strong>)</li>
-                <li><strong>Atrribute ([]):</strong> (ex. <strong></strong>)</li>
+                <li><strong>Tag:</strong> Select all the tags of the same type (ex. <strong>html {}</strong>). </li>
+                <li><strong>Class (.):</strong> Select an element that has a class; needs a matching class in the HTML (ex. <strong>.nav {}</strong>).</li>
+                <li><strong>ID (#):</strong> Select an element that has the ID; needs a matching class in the HTML (ex. <strong>#heading {}</strong>).</li> 
+                <li><strong>Descendant (space):</strong> Select an element that's a descendant of another element (ex. <strong> ul li {}</strong>).</li>
+                <li><strong>Child (>):</strong> Select an element directly inside another element (ex. <strong>ul > li</strong>).</li>
+                <li><strong>Adjacent Sibling (+):</strong> Select an element immediately beside another element (ex. <strong>h1 + p</strong>).</li>
+                <li><strong>General Sibling (~):</strong> Select an element that's at the same level (ex. <strong>h1~p</strong>).</li>
+                <li><strong>Atrribute ([]):</strong> Select an element by it's attribute. Good for styling links differently if they're external (ex. <strong>[href^="http"]</strong>).</li>
             </ul>
         </article>
 
         <article>
             <h4>Pseudo Classes</h4>
                 <ul>
-                    <li><strong>First Child (:first-child):</strong>  (ex. <strong></strong>) </li>
-                    <li><strong>Last Child (:last-child):</strong>  (ex. <strong></strong>)</li>
-                    <li><strong>Only Child (:last-child):</strong> (ex. <strong></strong>) </li>
-                    <li><strong>Nth Child (:nth-child):</strong> (ex. <strong></strong>) </li>
-                    <li><strong>Nth Last Child (:nth-last-child):</strong> (ex. <strong></strong>) </li>
-                    <li><strong>Nth of Type(:nth-of-type):</strong>(ex. <strong></strong>) </li>
-                    <li><strong>Nth Last of Type (:nth-last-of-type):</strong> (ex. <strong></strong>) </li>
-                    <li><strong>First of Type (:first-of-type):</strong>(ex. <strong></strong>) </li>
-                    <li><strong>Last of Type(:last-of-type):</strong> (ex. <strong></strong>) </li>
+                    <li><strong>First Child (:first-child):</strong> Select an element when it's the first inside its parent (ex. <strong></strong>). </li>
+                    <li><strong>Last Child (:last-child):</strong> Select an element when it's the last inside its parent (ex. <strong></strong>).</li>
+                    <li><strong>Only Child (:last-child):</strong> Select an element when it's the only thing inside its parent (ex. <strong></strong>). </li>
+                    <li><strong>Nth Child (:nth-child):</strong> Select an element by its number (ex. <strong></strong>). </li>
+                    <li><strong>Nth Last Child (:nth-last-child):</strong> Select an element by its number, counting backwards from the end (ex. <strong></strong>). </li>
+                    <li><strong>Nth of Type(:nth-of-type):</strong> Select an element by its number, but only counting others that match—not all children(ex. <strong></strong>). </li>
+                    <li><strong>Nth Last of Type (:nth-last-of-type):</strong> Select an element by its number, counting backwards from the end (ex. <strong></strong>). </li>
+                    <li><strong>First of Type (:first-of-type):</strong> Select an element that's the first of it's kind within it's parent (ex. <strong></strong>). </li>
+                    <li><strong>Last of Type(:last-of-type):</strong> Select an element that's the last of it's kind within it's parent (ex. <strong></strong>). </li>
                 </ul>
-            </article>
-        </section>
-        
-        <section id="accessibility">
-            <h3>Accessibility and Landmark Roles</h3>
-                <ul>
-                    <li>Header role: "banner"</li>
-                    <li>Footer role: "contentinfo"</li>
-                    <li>Main role: "main"</li>
-                    <li>Aside role: "complimentary"</li>
-                    <li>Nav role: "navigation"</li>
-                    <li>Skip links: 
-                        <a href="#">skip link</a>
-                </ul>
+        </article>
+    </section>
+       
 
+    <section id="the-css-box-model">
+        <article>
+            <h3>The CSS Box Model</h3>
+                <ul>
+                    <li><strong>Content:</strong> Basic box.</li>
+                    <li><strong>Padding:</strong> Outside pushing the border away from the content; used to give the content breathing room; background colour is visible (order: padding-top, padding-right, padding-bottom, padding-left).</li>
+                    <li><strong>Border:</strong> Stroke around the edge of padding where the background colour stops.</li>
+                    <li><strong>Margin:</strong> Transparent layer outside the box pushing other boxes away; the space around an element that seperates other elements; can be a positive or negative value (order: margin-top, margin-right, margin-bottom, margin-left).</li>
+                    <li>*Margin & Padding Shorthands:</li>
+                    <li class="li-remove">1 number: specifies a margin or padding on all 4 sides</li>
+                    <li class="li-remove">2 number: top/bottom & left/right</li>
+                    <li class="li-remove">3 number: top, left/right, bottom</li>
+                </ul>
+        </article>
+
+        <article>
+            <h4>Width & Height</h4>
+                <ul>
+                    <li><strong>%:</strong> Use percent for elements that should grow with the size of the browser, e.g columns, images </li>
+                    <li><strong>em:</strong> Use ems for elements that should grow with the size of the text, e.g. line-lengths</li>
+                    <li><strong>px:</strong> Use pixels for things that should never change size, e.g. logos, icons</li>
+                </ul>
+        </article> 
+                 
+        <article>
+            <h4>Min & Max Heights</h4>
+                <ul>
+                    <li><strong>min-width:</strong> Force the box to be at least this wide, but can grow wider.</li>
+                    <li><strong>min-height:</strong> Force the box to be at least this tall, but can grow taller.</li>
+                    <li><strong>max-width:</strong> Force the box to never exceed this width, but can get narrower than it.</li>
+                    <li><strong>max-height:</strong> Force the box to never exceed this height, but can get shorter than it.</li>
+                </ul>
+        </article>
+    </section>
+
+    <section id="display-property">
+        <h3>Display Property</h3>
+            <ul>
+                <li><strong>Inline</strong> allows element on the same line; height and width properties have no effect (inline elements ex. a, strong, em).</li>
+                <li><strong>Block</strong>force the element to be on its own line regardless of its width (block elements ex. ul, p, header).</li>
+                <li><strong>Inline-block</strong> element is formatted as an inline element but you can apply height and width values (inline-block elements ex. img, button).</li>
+                <li><strong>None</strong> the element is completely removed (hides elements).</li>
+            </ul>
+    </section>
+
+    <section id="syntax-of-css">
+        <h3>Centering Elements</h3>
+            <ul>
+                <li><strong>{text-align: center;} on line/inline-block element:</strong> If applied to the element itself, the text inside it will be centered. If applied to the parent element, the inline elements and the text inside them will be centered. </li>
+                <li><strong>{text-align: center;} on a block element:</strong> Using text-align:center on a block level element will only affect the content inside it, but will not move the element box itself to the center of its parent.</li>
+                <li><strong>{margin: 0 auto;} on a block element:</strong> If we have a block element, with a width, andwant it to center within its parent, we use auto margins. auto — tells the browser to automatically calculate a margin that's the same on the left and right.</li>
+            </ul>
+        </section>
+
+        <section id="syntax-of-css">
+            <h3>Float & Clear</h3>
+                <ul>
+                    <li><strong>Text wrapping with float:</strong> Composed of a selector and one or many declarations surrounded by curly braces {}. </li>
+                    <li class="li-remove">{float: left}: Move the element to the left, allowing text to wrap on the right side.</li>
+                    <li class="li-remove">{float: right}: Move theelement to the right, allowing text to wrap on the left side.</li>
+                    <li class="li-remove">{float: none}: Turn floating off.</li>
+                    <li><strong>Clearing floating content:</strong> Identifies the HTML element being targeted for styling.</li>
+                    <li class="li-remove">{clear: left}: Go below all left floated elements.</li>
+                    <li class="li-remove">{clear: right}: Go below all right floated elements.</li>
+                    <li class="li-remove">{clear: both}: Go below all floated elements.</li>
+                </ul>
+        </section>
 </main>
 <footer role="contentinfo">
     <p><small>&copy; Web Design 2023</small></p>
