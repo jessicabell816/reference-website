@@ -112,6 +112,7 @@ section a:focus{
 
 ul {
     font-family: 'PT Serif', serif;
+    max-width: 50em;
 }
 
 .li-remove{
